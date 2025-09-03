@@ -1,10 +1,11 @@
 # Prerequisites
-#
-- JDK 11 
-- Maven 3 
-- MySQL 8
 
-# Technologies 
+- **JDK:** 17 or 21
+- **Maven:** 3.9+
+- **MySQL:** 8.x
+
+# Technologies Used
+
 - Spring MVC
 - Spring Security
 - Spring Data JPA
@@ -13,13 +14,22 @@
 - Tomcat
 - MySQL
 - Memcached
-- Rabbitmq
-- ElasticSearch
-# Database
-Here,we used Mysql DB 
-sql dump file:
-- /src/main/resources/db_backup.sql
-- db_backup.sql file is a mysql dump file.we have to import this dump to mysql db server
-- > mysql -u <user_name> -p accounts < db_backup.sql
+- RabbitMQ
+- Elasticsearch
 
+# Database Setup
 
+This project uses MySQL as the database.
+A SQL dump file is provided to set up the initial schema and data.
+
+**SQL Dump File Location:**
+- `src/main/resources/db_backup.sql`
+
+**To import the dump into your MySQL server:**
+
+```sh
+mysql -u <user_name> -p accounts < src/main/resources/db_backup.sql
+```
+
+Replace `<user_name>` with your MySQL username.
+The database `accounts` should exist before importing the dump.
