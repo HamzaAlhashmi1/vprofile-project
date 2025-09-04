@@ -1,3 +1,7 @@
+## Architecture
+![Vprofile Project AWS](docs/images/Vprofile-project-AWS.png)
+
+
 # Prerequisites
 
 - **JDK:** 17 or 21
